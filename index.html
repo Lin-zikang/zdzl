@@ -1,0 +1,2142 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>合作说明</title>
+  <meta name="description" content="介绍 useful-tools.top（工具大全）与 zdzltop.com（ZDZL）的友链合作：社区×工具×AI 联动，共创更高效、更好用的体验。" />
+  <meta name="theme-color" content="#070b16" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Useful Tools × ZDZL｜合作联动介绍" />
+  <meta property="og:description" content="社区×工具×AI 联动：在 zdzl.useful-tools.top 了解两站点的合作与快速入口。" />
+  <meta property="og:type" content="website" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://zdzltop.com" />
+  <link rel="preconnect" href="https://favicon.im" />
+  <link rel="dns-prefetch" href="//zdzltop.com" />
+  <link rel="dns-prefetch" href="//favicon.im" />
+
+  <!-- Page icon (fallback-safe via favicon.im) -->
+  <link rel="icon" href="https://favicon.im/useful-tools.top?larger=true" />
+
+  <style>
+    :root{
+      --bg0:#060a14;
+      --bg1:#02040b;
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --faint:rgba(255,255,255,.42);
+
+      --surface:rgba(255,255,255,.08);
+      --surface2:rgba(255,255,255,.06);
+      --border:rgba(255,255,255,.14);
+
+      --brand:#2ad3ff;
+      --brand2:#3b82f6;
+      --ok:#34d399;
+      --warn:#fbbf24;
+
+      --shadow-lg: 0 28px 80px rgba(0,0,0,.38);
+      --shadow-md: 0 18px 50px rgba(0,0,0,.26);
+
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+
+      --maxw: 1120px;
+
+      --headerH: 72px;
+
+      --ring: 0 0 0 4px rgba(42,211,255,.18);
+      --ring2: 0 0 0 4px rgba(59,130,246,.16);
+    }
+
+    html[data-theme="light"]{
+      --bg0:#f7f9ff;
+      --bg1:#eef2ff;
+      --text:rgba(11,18,32,.92);
+      --muted:rgba(11,18,32,.70);
+      --faint:rgba(11,18,32,.50);
+
+      --surface:rgba(255,255,255,.76);
+      --surface2:rgba(255,255,255,.62);
+      --border:rgba(11,18,32,.12);
+
+      --shadow-lg: 0 26px 70px rgba(11,18,32,.14);
+      --shadow-md: 0 18px 46px rgba(11,18,32,.10);
+
+      --ring: 0 0 0 4px rgba(42,211,255,.18);
+      --ring2: 0 0 0 4px rgba(59,130,246,.16);
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+    }
+
+    body{
+      margin:0;
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height:1.55;
+      min-height:100svh;
+      background:
+        radial-gradient(1100px 680px at 12% 12%, rgba(42,211,255,.22), transparent 60%),
+        radial-gradient(900px 520px at 90% 16%, rgba(59,130,246,.22), transparent 58%),
+        radial-gradient(1050px 700px at 50% 112%, rgba(52,211,153,.14), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      overflow-x:hidden;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+    a:focus-visible, button:focus-visible{
+      outline:none;
+      box-shadow: var(--ring);
+      border-radius:12px;
+    }
+
+    .skip-link{
+      position:absolute;
+      left:12px; top:12px;
+      padding:10px 12px;
+      background:rgba(0,0,0,.72);
+      color:#fff;
+      border-radius:12px;
+      transform:translateY(-200%);
+      transition:transform .2s ease;
+      z-index:9999;
+    }
+    .skip-link:focus{ transform:translateY(0); }
+
+    .container{
+      width: min(var(--maxw), calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    /* Scroll progress */
+    .progress{
+      position:fixed;
+      top:0; left:0;
+      height:3px;
+      width:100%;
+      z-index:999;
+      pointer-events:none;
+      background:transparent;
+    }
+    .progress > i{
+      display:block;
+      height:100%;
+      width:0%;
+      background: linear-gradient(90deg, var(--brand), var(--brand2));
+      box-shadow: 0 0 16px rgba(42,211,255,.35);
+      transition: width .08s linear;
+    }
+
+    header.site-header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      height:var(--headerH);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: linear-gradient(180deg, rgba(0,0,0,.42), rgba(0,0,0,.12));
+      border-bottom:1px solid var(--border);
+    }
+    html[data-theme="light"] header.site-header{
+      background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.52));
+    }
+
+    .header-inner{
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 240px;
+    }
+
+    .brand-badge{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:40px; height:40px;
+      border-radius:14px;
+      background:
+        radial-gradient(16px 16px at 30% 30%, rgba(42,211,255,.55), transparent 70%),
+        radial-gradient(18px 18px at 70% 70%, rgba(59,130,246,.45), transparent 70%),
+        rgba(255,255,255,.08);
+      border:1px solid var(--border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .brand-badge svg{ width:20px; height:20px; }
+
+    .brand-title{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      line-height:1.15;
+    }
+    .brand-title strong{
+      font-size:14px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .brand-title small{
+      font-size:12px;
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .dot{
+      width:6px; height:6px;
+      border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, var(--brand), var(--brand2));
+      box-shadow: 0 0 14px rgba(42,211,255,.35);
+    }
+
+    nav.nav{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    nav.nav a{
+      font-size:13px;
+      color:var(--muted);
+      padding:9px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+      transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+      white-space:nowrap;
+    }
+    nav.nav a:hover{
+      color:var(--text);
+      background: rgba(255,255,255,.06);
+      border-color: var(--border);
+      transform: translateY(-1px);
+    }
+
+    .header-actions{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:10px;
+      min-width: 240px;
+    }
+
+    .btn{
+      appearance:none;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      cursor:pointer;
+      font-size:13px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+      user-select:none;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.10);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary{
+      border-color: rgba(42,211,255,.28);
+      background: linear-gradient(135deg, rgba(42,211,255,.18), rgba(59,130,246,.14));
+    }
+
+    .btn-ghost{
+      background: transparent;
+    }
+
+    .btn svg{
+      width:16px; height:16px;
+      flex:0 0 auto;
+    }
+
+    /* Hero */
+    .hero{
+      padding: clamp(46px, 6.2vw, 92px) 0 26px;
+      position:relative;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .brand, .header-actions{ min-width: auto; }
+      nav.nav{ display:none; }
+    }
+
+    .card{
+      background: var(--surface);
+      border:1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      position:relative;
+      overflow:hidden;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      background:
+        radial-gradient(600px 240px at 22% 18%, rgba(42,211,255,.12), transparent 55%),
+        radial-gradient(520px 260px at 84% 30%, rgba(59,130,246,.12), transparent 56%),
+        radial-gradient(460px 240px at 54% 100%, rgba(52,211,153,.10), transparent 56%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    html[data-theme="light"] .card::before{ opacity:.55; }
+
+    .card > .inner{
+      position:relative;
+      padding: 22px;
+    }
+
+    .hero h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.3vw, 44px);
+      line-height:1.15;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size: 15px;
+    }
+
+    .pills{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .pill i{
+      width:8px; height:8px;
+      border-radius:999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 0 16px rgba(42,211,255,.35);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 16px;
+    }
+
+    .hero-side{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:14px;
+    }
+
+    .partner-visual{
+      padding: 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height: 260px;
+    }
+
+    .partner-wrap{
+      width: min(520px, 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap: 16px;
+      position:relative;
+    }
+
+    @media (max-width: 520px){
+      .partner-wrap{
+        flex-direction:column;
+        gap:12px;
+      }
+    }
+
+    .logo-node{
+      width: 122px;
+      height: 122px;
+      border-radius: 28px;
+      border:1px solid var(--border);
+      background:
+        radial-gradient(40px 40px at 30% 30%, rgba(42,211,255,.22), transparent 70%),
+        radial-gradient(44px 44px at 70% 70%, rgba(59,130,246,.18), transparent 70%),
+        rgba(255,255,255,.06);
+      box-shadow: var(--shadow-md);
+      display:grid;
+      place-items:center;
+      position:relative;
+      overflow:hidden;
+      transform: translateZ(0);
+    }
+    .logo-node::after{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: conic-gradient(from 180deg, rgba(42,211,255,.0), rgba(42,211,255,.26), rgba(59,130,246,.24), rgba(42,211,255,.0));
+      filter: blur(10px);
+      opacity:.55;
+      animation: glow 6.5s linear infinite;
+      pointer-events:none;
+    }
+    @keyframes glow{
+      0%{ transform: rotate(0deg); }
+      100%{ transform: rotate(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .logo-node::after{ animation:none; }
+    }
+
+    .logo-node .logo{
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+      display:grid;
+      place-items:center;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      position:relative;
+      z-index:1;
+      overflow:hidden;
+    }
+
+    .logo-wrap{
+      width:100%;
+      height:100%;
+      display:grid;
+      place-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .logo-wrap img{
+      width: 78%;
+      height: 78%;
+      object-fit:contain;
+      opacity:0;
+      transform: scale(.96);
+      transition: opacity .22s ease, transform .22s ease;
+      filter: drop-shadow(0 8px 22px rgba(0,0,0,.22));
+    }
+    html[data-theme="light"] .logo-wrap img{
+      filter: drop-shadow(0 10px 24px rgba(11,18,32,.18));
+    }
+
+    .logo-wrap.is-loaded img{
+      opacity:1;
+      transform: scale(1);
+    }
+    .logo-fallback{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      font-weight:800;
+      letter-spacing:.6px;
+      font-size: 16px;
+      color: var(--text);
+      opacity:1;
+      transition: opacity .2s ease;
+      user-select:none;
+    }
+    .logo-wrap.is-loaded .logo-fallback{ opacity:0; }
+
+    .partner-center{
+      width: 110px;
+      height: 110px;
+      display:grid;
+      place-items:center;
+      position:relative;
+    }
+    .handshake{
+      width:56px;
+      height:56px;
+      border-radius: 20px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.08);
+      box-shadow: var(--shadow-md);
+      display:grid;
+      place-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .handshake svg{
+      width: 28px;
+      height: 28px;
+    }
+
+    .partner-line{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:1;
+    }
+    .partner-line svg{
+      width:100%;
+      height:100%;
+      overflow:visible;
+    }
+    .partner-line path{
+      fill:none;
+      stroke: rgba(255,255,255,.22);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-dasharray: 10 10;
+      animation: dash 10s linear infinite;
+    }
+    .partner-line path.glow{
+      stroke: rgba(42,211,255,.42);
+      stroke-width: 3;
+      stroke-dasharray: 16 14;
+      filter: drop-shadow(0 0 14px rgba(42,211,255,.25));
+      animation-duration: 8.5s;
+    }
+    @keyframes dash{
+      to{ stroke-dashoffset: -200; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .partner-line path{ animation:none; }
+    }
+
+    .mini{
+      margin-top: 12px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 520px){
+      .mini{ grid-template-columns: 1fr; }
+    }
+    .mini .mini-card{
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      padding: 12px 12px;
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .mini .mini-card svg{
+      width:18px; height:18px;
+      flex:0 0 auto;
+      margin-top:2px;
+      opacity:.9;
+    }
+    .mini .mini-card strong{
+      display:block;
+      font-size:13px;
+      margin-bottom:2px;
+    }
+    .mini .mini-card span{
+      color: var(--muted);
+      font-size: 12px;
+      display:block;
+    }
+
+    /* Sections */
+    section.section{
+      padding: 20px 0 10px;
+    }
+    .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:14px;
+      margin: 26px 0 14px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size: clamp(18px, 2.2vw, 26px);
+      line-height:1.2;
+      letter-spacing:.2px;
+    }
+    .section-title p{
+      margin:0;
+      color: var(--muted);
+      font-size: 13px;
+      max-width: 64ch;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 980px){
+      .grid-2{ grid-template-columns: 1fr; }
+    }
+
+    .site-card{
+      position:relative;
+      overflow:hidden;
+      border-radius: var(--radius-lg);
+      border:1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow-md);
+    }
+    .site-card .inner{
+      padding: 18px;
+      position:relative;
+    }
+    .site-head{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom: 12px;
+    }
+    .site-icon{
+      width:56px;
+      height:56px;
+      border-radius: 18px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.08);
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .site-icon img{
+      width:84%;
+      height:84%;
+      object-fit:contain;
+      opacity:0;
+      transform: scale(.96);
+      transition: opacity .22s ease, transform .22s ease;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,.22));
+    }
+    .site-icon.is-loaded img{ opacity:1; transform: scale(1); }
+    .site-meta{
+      min-width:0;
+    }
+    .site-meta h3{
+      margin:0;
+      font-size: 16px;
+      line-height:1.2;
+    }
+    .site-meta .url{
+      margin-top:4px;
+      font-size: 12px;
+      color: var(--muted);
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:12px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      padding: 6px 10px;
+      border-radius:999px;
+      max-width:100%;
+    }
+    .badge svg{ width:14px; height:14px; }
+
+    .bullets{
+      margin: 10px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:8px;
+    }
+    .bullets li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .bullets li i{
+      width:10px;
+      height:10px;
+      margin-top:6px;
+      border-radius:999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 0 16px rgba(42,211,255,.25);
+      flex:0 0 auto;
+    }
+
+    .site-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 14px;
+    }
+
+    .stats{
+      margin-top: 14px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+    @media (max-width: 520px){
+      .stats{ grid-template-columns: 1fr; }
+    }
+    .stat{
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      padding: 12px 12px;
+    }
+    .stat b{
+      display:block;
+      font-size: 18px;
+      letter-spacing:.2px;
+      margin-bottom:2px;
+    }
+    .stat small{
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Cooperation */
+    .co-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){
+      .co-grid{ grid-template-columns: 1fr; }
+    }
+    .co-card{
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow-md);
+      overflow:hidden;
+      position:relative;
+    }
+    .co-card .inner{ padding: 18px; position:relative; }
+    .co-card h3{
+      margin:0 0 8px;
+      font-size: 16px;
+    }
+    .co-card p{
+      margin:0 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .steps{
+      display:grid;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .step{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding: 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+    }
+    .step .n{
+      width: 28px;
+      height: 28px;
+      border-radius: 10px;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(135deg, rgba(42,211,255,.20), rgba(59,130,246,.14));
+      border: 1px solid rgba(42,211,255,.24);
+      font-weight: 800;
+      font-size: 13px;
+      flex:0 0 auto;
+    }
+    .step strong{
+      display:block;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+    .step span{
+      display:block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .timeline{
+      margin-top: 12px;
+      padding-left: 14px;
+      border-left: 2px solid rgba(255,255,255,.18);
+      display:grid;
+      gap:10px;
+    }
+    html[data-theme="light"] .timeline{ border-left-color: rgba(11,18,32,.12); }
+    .tl{
+      position:relative;
+      padding-left: 10px;
+    }
+    .tl::before{
+      content:"";
+      position:absolute;
+      left:-18px; top: 4px;
+      width: 10px; height: 10px;
+      border-radius:999px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 0 16px rgba(42,211,255,.25);
+    }
+    .tl b{ display:block; font-size: 13px; }
+    .tl small{ color: var(--muted); font-size: 12px; }
+
+    /* Quick links */
+    .quick-grid{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+    }
+    @media (max-width: 1080px){
+      .quick-grid{ grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 760px){
+      .quick-grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px){
+      .quick-grid{ grid-template-columns: 1fr; }
+    }
+
+    .link-card{
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow-md);
+      overflow:hidden;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      position:relative;
+      min-height: 110px;
+    }
+    .link-card:hover{
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      background: rgba(255,255,255,.10);
+    }
+    .link-card a{
+      display:flex;
+      gap:12px;
+      padding: 14px;
+      height:100%;
+      align-items:flex-start;
+    }
+    .link-ico{
+      width:38px;
+      height:38px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+      overflow:hidden;
+    }
+    .link-ico svg{ width:18px; height:18px; opacity:.92; }
+    .link-meta{ min-width:0; }
+    .link-meta strong{
+      display:block;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .link-meta span{
+      display:block;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    /* FAQ */
+    details.faq{
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow:hidden;
+    }
+    details.faq + details.faq{ margin-top: 10px; }
+    details.faq summary{
+      list-style:none;
+      cursor:pointer;
+      padding: 14px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      user-select:none;
+    }
+    details.faq summary::-webkit-details-marker{ display:none; }
+    .q{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      min-width:0;
+    }
+    .q .qmark{
+      width: 24px; height:24px;
+      border-radius: 10px;
+      display:grid;
+      place-items:center;
+      border: 1px solid rgba(42,211,255,.26);
+      background: rgba(42,211,255,.12);
+      font-weight: 900;
+      flex:0 0 auto;
+      margin-top: 1px;
+    }
+    .q strong{
+      display:block;
+      font-size: 13px;
+      line-height: 1.3;
+      margin-top: 3px;
+      white-space:normal;
+    }
+    .caret{
+      width: 22px;
+      height: 22px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+      transition: transform .2s ease;
+    }
+    details[open] .caret{ transform: rotate(180deg); }
+    .a{
+      padding: 0 16px 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .a p{ margin: 0 0 10px; }
+    .a .inline-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 34px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    /* Reveal animations */
+    .reveal{
+      opacity:0;
+      transform: translateY(10px);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+    .reveal.in{
+      opacity:1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce){
+      .reveal{ opacity:1; transform:none; transition:none; }
+    }
+
+    /* Small utility */
+    .muted{ color: var(--muted); }
+    .sep{ opacity:.55; padding: 0 6px; }
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    /* Anchor offset for sticky header */
+    .anchor{
+      scroll-margin-top: calc(var(--headerH) + 14px);
+    }
+
+    /* Floating to-top button */
+    .to-top{
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 60;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events:none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+    .to-top.show{
+      opacity:1;
+      transform: translateY(0);
+      pointer-events:auto;
+    }
+
+    /* Responsive header fallback */
+    .mobile-nav{
+      display:none;
+      margin-top: 10px;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .mobile-nav a{
+      font-size:12px;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+    }
+    @media (max-width: 980px){
+      .mobile-nav{ display:flex; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="站点标识">
+        <div class="brand-badge" aria-hidden="true">
+          <!-- Simple link icon -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M10.4 13.6l3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8.2 15.8l-1.9 1.9a4 4 0 0 1-5.6-5.6l1.9-1.9a4 4 0 0 1 5.6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15.8 8.2l1.9-1.9a4 4 0 0 1 5.6 5.6l-1.9 1.9a4 4 0 0 1-5.6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="brand-title">
+          <strong>
+            Useful Tools <span class="muted">×</span> ZDZL
+          </strong>
+          <small>
+            <span class="dot" aria-hidden="true"></span>
+            合作页：<span class="mono" id="hostName">zdzl.useful-tools.top</span>
+          </small>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="页面导航">
+        <a href="#about" class="anchor">合作概览</a>
+        <a href="#sites" class="anchor">两个网站</a>
+        <a href="#cooperate" class="anchor">协作方式</a>
+        <a href="#quick" class="anchor">快速入口</a>
+        <a href="#faq" class="anchor">FAQ</a>
+        <a href="#contact" class="anchor">联系</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="copyLinkBtn" type="button" aria-label="复制本页链接">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M9 9h10v10H9V9Z" stroke="currentColor" stroke-width="2" />
+            <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="2" />
+          </svg>
+          复制链接
+        </button>
+
+        <button class="btn" id="themeBtn" type="button" aria-label="切换主题">
+          <svg id="themeIcon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M18.4 5.6l1.4-1.4M4.2 19.8l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="themeLabel">主题：自动</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card reveal">
+          <div class="inner">
+            <div class="badge" style="margin-bottom:10px;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s-7-4.35-7-11a7 7 0 0 1 14 0c0 6.65-7 11-7 11Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9.5 12l1.8 1.8L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>友链合作 · 互联互通 · 共创迭代</span>
+            </div>
+
+            <h1>社区遇见工具：让灵感更快落地</h1>
+            <p>
+              本页用于介绍 <span class="mono">useful-tools.top</span>（工具大全）与 <span class="mono">zdzltop.com</span>（ZDZL）的合作联动。
+              我们把 <b>ZDZL 的社区/资源/AI</b> 与 <b>工具大全的 45 个实用小工具</b> 串联起来：你可以在社区交流与提出需求，也能用工具快速完成验证、计算与创作。
+            </p>
+
+            <div class="pills" aria-label="合作关键词">
+              <span class="pill"><i aria-hidden="true"></i>友链互通</span>
+              <span class="pill"><i aria-hidden="true"></i>社区反馈驱动</span>
+              <span class="pill"><i aria-hidden="true"></i>工具效率增强</span>
+              <span class="pill"><i aria-hidden="true"></i>长期维护</span>
+            </div>
+
+            <div class="hero-actions" role="group" aria-label="快速访问">
+              <a class="btn btn-primary" href="https://zdzltop.com/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                访问 ZDZL
+              </a>
+
+              <a class="btn" href="https://useful-tools.top/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l2.2 6.8H21l-5.6 4 2.2 6.8L12 15.6 6.4 19.6l2.2-6.8L3 8.8h6.8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                打开 工具大全
+              </a>
+
+              <a class="btn btn-ghost" href="https://zdzltop.com/friends" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 10V7a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 12h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                查看 ZDZL 友链
+              </a>
+            </div>
+
+            <div class="mobile-nav" aria-label="移动端导航">
+              <a href="#about">合作概览</a>
+              <a href="#sites">两个网站</a>
+              <a href="#cooperate">协作方式</a>
+              <a href="#quick">快速入口</a>
+              <a href="#faq">FAQ</a>
+              <a href="#contact">联系</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="card reveal">
+            <div class="inner partner-visual" aria-label="合作关系示意">
+              <div class="partner-wrap">
+                <!-- Left node: Useful Tools -->
+                <div class="logo-node" aria-label="工具大全">
+                  <div class="logo">
+                    <div class="logo-wrap" data-logo>
+                      <img
+                        src="https://favicon.im/useful-tools.top?larger=true"
+                        alt="工具大全 useful-tools.top logo"
+                        loading="lazy"
+                        decoding="async" />
+                      <div class="logo-fallback" aria-hidden="true">TOOLS</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="partner-center" aria-label="合作连接">
+                  <div class="partner-line" aria-hidden="true">
+                    <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+                      <path class="glow" d="M15,60 C85,15 120,15 160,60 C200,105 235,105 305,60"></path>
+                      <path d="M15,60 C85,15 120,15 160,60 C200,105 235,105 305,60"></path>
+                    </svg>
+                  </div>
+
+                  <div class="handshake" title="合作联动" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M8.5 12.5l2.2 2.2a2 2 0 0 0 2.8 0l4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 12l3-3a3 3 0 0 1 4.2 0l.8.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M21 12l-3-3a3 3 0 0 0-4.2 0l-.8.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M7.2 16.8l-1.6 1.6a1.8 1.8 0 0 1-2.6 0 1.8 1.8 0 0 1 0-2.6l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M16.8 16.8l1.6 1.6a1.8 1.8 0 0 0 2.6 0 1.8 1.8 0 0 0 0-2.6l-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Right node: ZDZL -->
+                <div class="logo-node" aria-label="ZDZL">
+                  <div class="logo">
+                    <div class="logo-wrap" data-logo>
+                      <img
+                        src="https://zdzltop.com/wp-content/uploads/2025/12/ZDZL-%E6%B0%B4%E5%8D%B0%E5%9B%BE-scaled.png"
+                        alt="ZDZL logo"
+                        loading="lazy"
+                        decoding="async" />
+                      <div class="logo-fallback" aria-hidden="true">ZDZL</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini reveal" aria-label="合作亮点">
+            <div class="mini-card">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16M4 12h10M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <strong>友链已建立</strong>
+                <span>ZDZL 友链页已收录「工具大全」，并欢迎更多共创。</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <strong>双向入口</strong>
+                <span>在本合作页集中呈现两站重点功能与常用工具入口。</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s-7-4.35-7-11a7 7 0 0 1 14 0c0 6.65-7 11-7 11Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>社区反馈驱动</strong>
+                <span>需求/建议可在 ZDZL 论坛发帖沉淀，推动工具迭代。</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 8h10M7 12h6M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <div>
+                <strong>内容与工具互补</strong>
+                <span>社区的讨论与解决方案更容易“可执行、可复用”。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section anchor">
+      <div class="section-title">
+        <h2>合作概览</h2>
+        <p>用更清晰的结构，说明“我们如何一起做得更好”。</p>
+      </div>
+
+      <div class="co-grid">
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>为什么要合作？</h3>
+            <p>
+              工具可以提升效率，但工具也需要不断优化；社区可以聚集需求与经验，但社区也需要“可落地”的解决方案。
+              因此我们让 <b>ZDZL（社区/资源/AI）</b> 与 <b>工具大全（浏览器端实用工具集合）</b> 建立更紧密的连接。
+            </p>
+
+            <ul class="bullets">
+              <li><i aria-hidden="true"></i>在 ZDZL 讨论/沉淀需求 → 更精准地打磨工具体验</li>
+              <li><i aria-hidden="true"></i>在 工具大全 快速完成计算/转换/练习 → 更快验证想法</li>
+              <li><i aria-hidden="true"></i>以友链互通为基础 → 持续扩展入口与内容联动</li>
+            </ul>
+
+            <div class="site-actions" style="margin-top:14px;">
+              <a class="btn btn-primary" href="https://zdzltop.com/forum-post/338.html" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 5h16v12H7l-3 3V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M7 9h10M7 12h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                在 ZDZL 查看工具大全分享帖
+              </a>
+              <a class="btn" href="https://zdzltop.com/friends" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 7h10M7 12h10M7 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                友链收录证明
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>合作方式一览</h3>
+            <p>
+              我们把合作拆成 4 个可执行的模块：入口互通、需求池、专题联动、维护机制。每一项都能独立落地，也能持续迭代。
+            </p>
+
+            <div class="steps" aria-label="合作步骤">
+              <div class="step">
+                <div class="n">1</div>
+                <div>
+                  <strong>入口互通（友链+导航页）</strong>
+                  <span>以本页为“合作入口”，同时在 ZDZL 友链收录工具大全，形成稳定互访路径。</span>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="n">2</div>
+                <div>
+                  <strong>社区需求池（论坛反馈）</strong>
+                  <span>在 ZDZL 论坛沉淀：需求、BUG、建议、玩法与使用技巧，让迭代更有方向。</span>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="n">3</div>
+                <div>
+                  <strong>专题联动（内容→工具 / 工具→内容）</strong>
+                  <span>用工具支撑文章/帖子中的操作场景，也让工具页挂载“相关文章/讨论入口”。</span>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="n">4</div>
+                <div>
+                  <strong>长期维护（体验与可靠性）</strong>
+                  <span>持续优化 UI、移动端与性能；重要变更尽量提供清晰说明与稳定入口。</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline" aria-label="关键时间点">
+              <div class="tl">
+                <b>2024-10：工具大全上线</b>
+                <small>以“常用小工具集合”为定位，持续扩展功能。</small>
+              </div>
+              <div class="tl">
+                <b>2026-01：ZDZL 使用指南更新</b>
+                <small>强调多平台登录、社区治理、积分经验与主题/徽章体系等核心体验。</small>
+              </div>
+              <div class="tl">
+                <b>2026-02-23：工具大全更新记录</b>
+                <small>在 ZDZL 社区分享帖中标注工具数与最近更新时间，便于共建与追踪。</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITES -->
+    <section id="sites" class="section anchor">
+      <div class="section-title">
+        <h2>两个网站，一套联动体验</h2>
+        <p>下面用“站点名片”的方式，完整介绍 useful-tools.top 与 zdzltop.com 的核心能力。</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Useful Tools -->
+        <article class="site-card reveal" aria-label="工具大全站点介绍">
+          <div class="inner">
+            <div class="site-head">
+              <div class="site-icon" data-logo>
+                <img src="https://favicon.im/useful-tools.top?larger=true" alt="工具大全 logo" loading="lazy" decoding="async" />
+              </div>
+              <div class="site-meta">
+                <h3>工具大全（Useful Tools）</h3>
+                <div class="url">
+                  <span class="mono">https://useful-tools.top/</span>
+                  <span class="sep">·</span>
+                  <span class="badge" title="定位">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 2l2.2 6.8H21l-5.6 4 2.2 6.8L12 15.6 6.4 19.6l2.2-6.8L3 8.8h6.8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    浏览器端实用工具集合
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="bullets">
+              <li><i aria-hidden="true"></i><b>工具数：45 个</b>（覆盖计算、转换、学习练习、小游戏、开发等方向）</li>
+              <li><i aria-hidden="true"></i><b>成立时间：</b>2024 年 10 月（持续更新迭代）</li>
+              <li><i aria-hidden="true"></i><b>最近更新：</b>2026 年 2 月 23 日（见 ZDZL 社区分享帖）</li>
+              <li><i aria-hidden="true"></i>支持搜索、移动端友好，并提供部分工具的深色模式/交互增强体验</li>
+            </ul>
+
+            <div class="stats" aria-label="工具大全数据">
+              <div class="stat">
+                <b class="countup" data-count="45">0</b>
+                <small>已收录工具数</small>
+              </div>
+              <div class="stat">
+                <b class="mono">2024-10</b>
+                <small>成立时间</small>
+              </div>
+              <div class="stat">
+                <b class="mono">2026-02-23</b>
+                <small>最后更新时间</small>
+              </div>
+            </div>
+
+            <div class="site-actions">
+              <a class="btn btn-primary" href="https://useful-tools.top/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                打开工具大全
+              </a>
+              <a class="btn" href="https://useful-tools.top/IDE" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M10 8l-4 4 4 4M14 8l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                在线 IDE
+              </a>
+              <a class="btn btn-ghost" href="#quick">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 7h12M6 12h12M6 17h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                更多入口
+              </a>
+            </div>
+
+            <div class="badge" style="margin-top:12px;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              联系邮箱：<span class="mono">useful-tools_service@outlook.com</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZDZL -->
+        <article class="site-card reveal" aria-label="ZDZL站点介绍">
+          <div class="inner">
+            <div class="site-head">
+              <div class="site-icon" data-logo>
+                <img
+                  src="https://zdzltop.com/wp-content/uploads/2025/12/ZDZL-%E6%B0%B4%E5%8D%B0%E5%9B%BE-scaled.png"
+                  alt="ZDZL logo"
+                  loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="site-meta">
+                <h3>ZDZL（团队官网 & 社区平台）</h3>
+                <div class="url">
+                  <span class="mono">https://zdzltop.com/</span>
+                  <span class="sep">·</span>
+                  <span class="badge" title="理念">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 21s-7-4.35-7-11a7 7 0 0 1 14 0c0 6.65-7 11-7 11Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    创新 · 协作 · 共赢
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="bullets">
+              <li><i aria-hidden="true"></i>专注信息技术与数字创意领域，提供社区讨论、资源内容与产品入口</li>
+              <li><i aria-hidden="true"></i><b>多元登录：</b>邮箱注册，并支持微信/QQ/小米/Microsoft 等快捷登录</li>
+              <li><i aria-hidden="true"></i><b>社区机制：</b>论坛板块化讨论、内容激励（积分/经验）、徽章与主题切换等</li>
+              <li><i aria-hidden="true"></i>提供 ZDZL AI 等产品入口，帮助用户更快获取思路与参考</li>
+            </ul>
+
+            <div class="stats" aria-label="ZDZL关键点">
+              <div class="stat">
+                <b class="countup" data-count="4">0</b>
+                <small>快捷登录平台</small>
+              </div>
+              <div class="stat">
+                <b>论坛</b>
+                <small>开放讨论与共创</small>
+              </div>
+              <div class="stat">
+                <b>AI</b>
+                <small>ZDZL AI 产品入口</small>
+              </div>
+            </div>
+
+            <div class="site-actions">
+              <a class="btn btn-primary" href="https://zdzltop.com/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                访问 ZDZL
+              </a>
+              <a class="btn" href="https://ai.zdzltop.com/index" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2v4M12 18v4M4 12H2M22 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M8 7h8v10H8V7Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9.5 10.5h5M9.5 13.5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                进入 ZDZL AI
+              </a>
+              <a class="btn btn-ghost" href="https://zdzltop.com/forums" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 5h16v12H7l-3 3V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                逛逛论坛
+              </a>
+            </div>
+
+            <div class="badge" style="margin-top:12px;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 7h10M7 12h10M7 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              推荐阅读：<a class="mono" href="https://zdzltop.com/63.html" target="_blank" rel="noopener noreferrer">ZDZL 官方使用指南</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COOPERATE -->
+    <section id="cooperate" class="section anchor">
+      <div class="section-title">
+        <h2>协作方式：从“链接”到“共创”</h2>
+        <p>不仅互相放一个入口，更重要的是把需求、工具与内容连接成闭环。</p>
+      </div>
+
+      <div class="co-grid">
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>联动闭环示意</h3>
+            <p>下面这条链路，是我们最希望长期跑通的一件事：</p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="n">A</div>
+                <div>
+                  <strong>在 ZDZL 提出问题 / 分享经验</strong>
+                  <span>讨论、问答、投票、精华内容沉淀，让真实需求浮现。</span>
+                </div>
+              </div>
+              <div class="step">
+                <div class="n">B</div>
+                <div>
+                  <strong>在 工具大全 快速“做出来”</strong>
+                  <span>用在线 IDE、转换器、计算器、练习器或小游戏模块快速验证与实现。</span>
+                </div>
+              </div>
+              <div class="step">
+                <div class="n">C</div>
+                <div>
+                  <strong>反馈 → 迭代 → 再分享</strong>
+                  <span>把改进点回流到社区，形成持续升级的共创循环。</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="site-actions" style="margin-top:14px;">
+              <a class="btn btn-primary" href="https://zdzltop.com/forums" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 5h16v12H7l-3 3V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                去 ZDZL 发帖/讨论
+              </a>
+              <a class="btn" href="https://useful-tools.top/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l2.2 6.8H21l-5.6 4 2.2 6.8L12 15.6 6.4 19.6l2.2-6.8L3 8.8h6.8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                去 工具大全 实操
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>可靠性与边界说明</h3>
+            <p>
+              为了让页面“好看，也好用”，我们在设计上尽量做到：结构清晰、入口稳定、移动端友好、无脚手架依赖。
+              同时也明确边界，避免过度承诺。
+            </p>
+
+            <ul class="bullets">
+              <li><i aria-hidden="true"></i><b>单文件部署：</b>本页仅一个 HTML，CSS/JS 全内联，适合静态托管。</li>
+              <li><i aria-hidden="true"></i><b>Logo 获取：</b>ZDZL 使用其官网公开 Logo 图；工具大全使用 favicon.im 获取站点图标（加载失败自动降级为文字）。</li>
+              <li><i aria-hidden="true"></i><b>合作声明：</b>本页用于展示友链合作与功能互补，具体权益/规则以两站点公告为准。</li>
+              <li><i aria-hidden="true"></i><b>无障碍与性能：</b>提供键盘可达、原生 FAQ 组件、减少动画偏好支持。</li>
+            </ul>
+
+            <div class="badge" style="margin-top:12px;">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 1l3 5 6 .7-4.4 3.8 1.3 5.9-5.9-2.6-5.9 2.6 1.3-5.9L3 6.7 9 6l3-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+              Logo 与站点名称归各自所有，本页仅作合作展示与导航使用。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section id="quick" class="section anchor">
+      <div class="section-title">
+        <h2>快速入口</h2>
+        <p>把常用功能做成“可一键到达”的入口，减少查找成本。</p>
+      </div>
+
+      <div class="quick-grid">
+        <!-- ZDZL -->
+        <div class="link-card reveal">
+          <a href="https://ai.zdzltop.com/index" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2v4M12 18v4M4 12H2M22 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 7h8v10H8V7Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>ZDZL AI</strong>
+              <span>AI 对话入口（含“深度思考”等能力入口）。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://zdzltop.com/forums" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 5h16v12H7l-3 3V5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>ZDZL 论坛首页</strong>
+              <span>综合讨论、问答、投票与互动沉淀。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://zdzltop.com/friends" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 7h10M7 12h10M7 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>ZDZL 友情链接</strong>
+              <span>已收录「工具大全」，合作入口长期稳定。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://zdzltop.com/forum-post/338.html" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 4h12v16H6V4Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>分享帖：工具大全</strong>
+              <span>在 ZDZL 的分享记录（含工具数、更新时间等）。</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Useful Tools -->
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l2.2 6.8H21l-5.6 4 2.2 6.8L12 15.6 6.4 19.6l2.2-6.8L3 8.8h6.8L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>工具大全首页</strong>
+              <span>45 个小工具入口与搜索，一站直达。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/IDE" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M10 8l-4 4 4 4M14 8l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>在线 IDE</strong>
+              <span>C++ / Python / HTML / JavaScript / Markdown。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h12v10H4V7Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 10l4-2v8l-4-2v-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>屏幕录制</strong>
+              <span>浏览器端录屏工具入口（适合演示/教学）。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E6%A0%A1%E9%9F%B3%E5%99%A8" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8 20V8a4 4 0 0 1 8 0v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>专业在线校音器</strong>
+              <span>支持多乐器预设与深色模式等设置。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E8%AE%A1%E7%AE%97%E5%99%A8" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 3h10v18H7V3Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 7h6M9 11h2M13 11h2M9 15h2M13 15h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>科学计算器</strong>
+              <span>支持三角函数、幂运算、科学计数等。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/Base64%E8%BD%AC%E5%9B%BE%E7%89%87" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 14l2-2 2 2 4-4 2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>Base64 转图片</strong>
+              <span>快速将 Base64 内容转换为可下载图片。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E4%B9%9D%E4%BA%95%E6%A3%8B" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 4v16M17 4v16M4 7h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>九井棋（双人/AI）</strong>
+              <span>Ultimate Tic-Tac-Toe / Tic-Tac-Ku 玩法入口。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E6%95%B0%E7%8B%AC" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 4v16M4 12h16M8 4v16M16 4v16M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" opacity=".85"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>数独练习</strong>
+              <span>生成题目，随时开练（复古挑战）。</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="link-card reveal">
+          <a href="https://useful-tools.top/%E8%B4%AA%E5%90%83%E8%9B%87" target="_blank" rel="noopener noreferrer">
+            <div class="link-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 12c0-3 2-5 5-5h1a5 5 0 0 1 0 10h-1a3 3 0 0 0 0 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16.5 10.5h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="link-meta">
+              <strong>贪吃蛇</strong>
+              <span>支持键盘/手机操作，适合放松一下。</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section anchor">
+      <div class="section-title">
+        <h2>FAQ</h2>
+        <p>把最常见的问题提前讲清楚，让访问更顺畅。</p>
+      </div>
+
+      <details class="faq reveal">
+        <summary>
+          <span class="q">
+            <span class="qmark" aria-hidden="true">?</span>
+            <strong>使用这些入口需要登录吗？</strong>
+          </span>
+          <span class="caret" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="a">
+          <p>
+            <b>工具大全</b>的大部分工具属于“打开即用”的浏览器工具；而 <b>ZDZL</b> 在发帖、收藏、积分/经验体系等功能上通常需要账号登录。
+            你也可以先浏览内容，再决定是否注册/绑定。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq reveal">
+        <summary>
+          <span class="q">
+            <span class="qmark" aria-hidden="true">?</span>
+            <strong>我想提需求/报 BUG，应该去哪里？</strong>
+          </span>
+          <span class="caret" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="a">
+          <p>
+            推荐两条路径：<br/>
+            1）在 <b>ZDZL 论坛</b>发帖（便于公开讨论与沉淀）；<br/>
+            2）发送邮件到工具大全邮箱（便于精确描述问题与附件补充）。
+          </p>
+          <div class="inline-links">
+            <a class="btn btn-primary" href="https://zdzltop.com/forums" target="_blank" rel="noopener noreferrer">去 ZDZL 论坛</a>
+            <a class="btn" href="mailto:useful-tools_service@outlook.com">发邮件到工具大全</a>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq reveal">
+        <summary>
+          <span class="q">
+            <span class="qmark" aria-hidden="true">?</span>
+            <strong>ZDZL AI 的内容可以直接当结论吗？</strong>
+          </span>
+          <span class="caret" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="a">
+          <p>
+            AI 结果通常适合用作“思路/参考/草稿”，关键决策建议结合权威资料与实际验证。
+            我们推荐的做法是：先用 AI 得到方案雏形，再用工具大全里的工具进行计算、转换、演示或验证。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq reveal">
+        <summary>
+          <span class="q">
+            <span class="qmark" aria-hidden="true">?</span>
+            <strong>这页会不会收集我的隐私数据？</strong>
+          </span>
+          <span class="caret" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="a">
+          <p>
+            本合作页是静态介绍与导航页面，不需要你输入任何敏感信息。页面仅包含基础的前端交互（主题切换、复制链接、动画等）。
+            具体站点的数据规则请以各自站点的用户协议与隐私政策为准。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq reveal">
+        <summary>
+          <span class="q">
+            <span class="qmark" aria-hidden="true">?</span>
+            <strong>未来会有哪些更深的联动？</strong>
+          </span>
+          <span class="caret" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </summary>
+        <div class="a">
+          <p>
+            联动会优先走“稳定、可持续”的路线，例如：更多专题入口、工具与帖子互相引用、需求池与更新记录更透明等。
+            任何涉及功能/权益的变化，以两站点的公告与说明为准。
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section anchor">
+      <div class="section-title">
+        <h2>联系与反馈</h2>
+        <p>欢迎你提出想法：你的一句建议，可能就是下一个工具或功能的起点。</p>
+      </div>
+
+      <div class="co-grid">
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>工具大全（useful-tools.top）</h3>
+            <p>邮件是最直接的反馈通道：适合 BUG 复现、功能建议、截图/视频等补充材料。</p>
+            <div class="site-actions">
+              <a class="btn btn-primary" href="mailto:useful-tools_service@outlook.com">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                useful-tools_service@outlook.com
+              </a>
+              <a class="btn" href="https://useful-tools.top/" target="_blank" rel="noopener noreferrer">打开工具大全</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="co-card reveal">
+          <div class="inner">
+            <h3>ZDZL（zdzltop.com）</h3>
+            <p>如果你的反馈适合公开讨论（例如“我希望增加某类工具/某种玩法/某种改进”），建议直接在论坛发帖，方便大家共同参与。</p>
+            <div class="site-actions">
+              <a class="btn btn-primary" href="https://zdzltop.com/forums" target="_blank" rel="noopener noreferrer">去 ZDZL 论坛</a>
+              <a class="btn" href="https://zdzltop.com/" target="_blank" rel="noopener noreferrer">访问 ZDZL 首页</a>
+              <a class="btn btn-ghost" href="https://zdzltop.com/friends" target="_blank" rel="noopener noreferrer">友链页</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div>© <span id="year"></span> zdzl.useful-tools.top</div>
+          <div class="muted">本页为合作展示与导航页（单文件 HTML）。</div>
+        </div>
+        <div class="muted" style="max-width: 68ch;">
+          说明：ZDZL 与 工具大全 的名称、标识与内容归各自所有；本页引用公开入口与公开 Logo/站点图标用于展示合作关系与跳转导航。
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="to-top" id="toTop">
+    <button class="btn" type="button" aria-label="回到顶部">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      顶部
+    </button>
+  </div>
+
+  <script>
+    (function () {
+      const $ = (sel, root=document) => root.querySelector(sel);
+      const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+      // Host name display (safe for local preview)
+      const hostEl = $("#hostName");
+      if (hostEl && location && location.hostname) hostEl.textContent = location.hostname;
+
+      // Year
+      const y = new Date().getFullYear();
+      const yearEl = $("#year");
+      if (yearEl) yearEl.textContent = String(y);
+
+      // Logos: show fallback until loaded
+      $$("[data-logo]").forEach((wrap) => {
+        const img = wrap.querySelector("img");
+        if (!img) return;
+
+        const markLoaded = () => wrap.classList.add("is-loaded");
+        const markError = () => {
+          wrap.classList.remove("is-loaded");
+          // keep fallback visible
+        };
+
+        if (img.complete && img.naturalWidth > 0) markLoaded();
+        img.addEventListener("load", markLoaded, { once: true });
+        img.addEventListener("error", markError, { once: true });
+      });
+
+      // Theme handling
+      const themeBtn = $("#themeBtn");
+      const themeLabel = $("#themeLabel");
+      const html = document.documentElement;
+
+      const getPreferred = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      const applyTheme = (mode) => {
+        if (mode === "auto") {
+          html.setAttribute("data-theme", getPreferred());
+        } else {
+          html.setAttribute("data-theme", mode);
+        }
+        if (themeLabel) {
+          const cn = mode === "auto" ? "自动" : (mode === "light" ? "浅色" : "深色");
+          themeLabel.textContent = "主题：" + cn;
+        }
+      };
+
+      const saved = localStorage.getItem("theme") || "auto";
+      applyTheme(saved);
+
+      // React to system change when in auto
+      if (window.matchMedia) {
+        const mq = window.matchMedia("(prefers-color-scheme: light)");
+        mq.addEventListener?.("change", () => {
+          const cur = localStorage.getItem("theme") || "auto";
+          if (cur === "auto") applyTheme("auto");
+        });
+      }
+
+      themeBtn?.addEventListener("click", () => {
+        const cur = localStorage.getItem("theme") || "auto";
+        const next = cur === "auto" ? "dark" : (cur === "dark" ? "light" : "auto");
+        localStorage.setItem("theme", next);
+        applyTheme(next);
+      });
+
+      // Copy link
+      const copyBtn = $("#copyLinkBtn");
+      copyBtn?.addEventListener("click", async () => {
+        const url = location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copyBtn.textContent = "已复制";
+          setTimeout(() => (copyBtn.innerHTML =
+            '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 9h10v10H9V9Z" stroke="currentColor" stroke-width="2" /><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="2" /></svg>复制链接'
+          ), 900);
+        } catch (e) {
+          // Fallback: prompt
+          window.prompt("复制本页链接：", url);
+        }
+      });
+
+      // Scroll progress + to-top
+      const progressBar = $("#progressBar");
+      const toTop = $("#toTop");
+      const updateScrollUI = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - doc.clientHeight;
+        const cur = doc.scrollTop || document.body.scrollTop || 0;
+        const pct = max > 0 ? (cur / max) * 100 : 0;
+        if (progressBar) progressBar.style.width = pct.toFixed(2) + "%";
+        if (toTop) toTop.classList.toggle("show", cur > 520);
+      };
+      window.addEventListener("scroll", updateScrollUI, { passive: true });
+      updateScrollUI();
+
+      toTop?.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Reveal animations
+      const revealEls = $$(".reveal");
+      const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduceMotion) {
+        revealEls.forEach(el => el.classList.add("in"));
+      } else if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => io.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add("in"));
+      }
+
+      // Count up (simple, lightweight)
+      const countups = $$(".countup");
+      const animateCount = (el) => {
+        const target = Number(el.getAttribute("data-count") || "0");
+        const duration = 850;
+        const start = performance.now();
+        const from = 0;
+
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - t, 3);
+          const v = Math.round(from + (target - from) * eased);
+          el.textContent = String(v);
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      if (reduceMotion) {
+        countups.forEach((el) => (el.textContent = el.getAttribute("data-count") || "0"));
+      } else if ("IntersectionObserver" in window) {
+        const io2 = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              animateCount(e.target);
+              io2.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.4 });
+        countups.forEach(el => io2.observe(el));
+      } else {
+        countups.forEach(animateCount);
+      }
+    })();
+  </script>
+</body>
+</html>
